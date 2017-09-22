@@ -1,0 +1,15 @@
+<h1>ChanBlogs</h1>
+
+
+<% @post.each do |post| %>
+<div class="container">
+   <div class="jumbotron" style="height: 20px width: 60px">
+	 <h3><%= post.title %></h3>
+	 <p><%= post.body %></p>
+	 <%= link_to "Read More" , post_path(post), :class => 'btn btn-info' %>
+	 <br>
+	 <br>
+    </div>
+</div>    
+<% end %>
+
