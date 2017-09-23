@@ -3,9 +3,9 @@
 <br>
 <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-warning' %>
 <%= link_to "Delete", post_path(@post),
-								method: :delete ,
-								data: {confirm: 'Are you Sure !'}, 
-								:class => 'btn btn-danger' %>
+								'data-method' => :delete ,
+								:class => "btn btn-danger",
+								:confirm => "are you sure" %>
 <br>
 <%= render 'comments/comments' %>
 <%= render 'comments/form' %>

@@ -2,14 +2,19 @@
 <html>
   <head>
     <title>ChanBlog</title>
-    <%= csrf_meta_tags %>
+    <%= csrf_meta_tags     %>
 
-   
+    <%= csrf_meta_tags     %>
     <%= stylesheet_link_tag    'https://getbootstrap.com/dist/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/navbar-top-fixed.css' %>
   
     
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> true %>
+
+<%= javascript_include_tag 'https://code.jquery.com/jquery-3.2.1.slim.min.js' %>
+<%= javascript_include_tag 'https://getbootstrap.com/dist/js/bootstrap.min.js' %>
+
+<%= javascript_include_tag "application" %>
 
   
     <%= javascript_include_tag 'https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js' %>
@@ -20,10 +25,10 @@
 
  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">ChanBlogs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbar" aria-controls="navbarCollapse"  aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navigationbar" style=" ">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="navbar-nav" > <%= link_to "Home",home_path %><span class="sr-only">(current)</span></a>
@@ -45,7 +50,7 @@
       <div class="jumbotron" style="background-image: url(https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Free-HD-blurred-wallpaper-PIC-WPC008968.jpg);">
         <h1>Forum To Meet Over Thoughts</h1>
         <p class="lead">This is an blog to every student to come up with new Ideas and your Ideas are discussed with this Platform... Hope You Enjoy This !!!</p>
-        <a class="btn btn-lg btn-outline-success" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+        <a class="btn btn-lg btn-outline-success" href="https://www.facebook.com/profile.php?id=100008005543015" role="button">Like To Promote &raquo;</a>
       </div>
     </div>
 <div class="container">
